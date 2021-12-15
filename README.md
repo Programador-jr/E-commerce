@@ -9,5 +9,5 @@
 ![size](https://img.shields.io/github/repo-size/Programador-jr/E-commerce)
 ![license](https://img.shields.io/github/license/Programador-jr/E-commerce)
 ![release](https://img.shields.io/github/v/release/Programador-jr/E-commerce?include_prereleases)
-![upptime](https://img.shields.io/website?down_color=red&down_message=Offline&up_message=Online&url=https%3A%2F%2Fe-commerce.kingprogrammer.repl.co)
+![upptime](https://img.shields.io/website?down_color=red&down_message=Offline&up_message=Online&url=https://E-commerce.kingprogrammer.repl.co)
 ![last-commite](https://img.shields.io/github/last-commit/Programador-jr/E-commerce)
