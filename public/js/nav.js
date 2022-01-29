@@ -44,18 +44,20 @@ userImageButton.addEventListener('click', () =>{
 
 window.onload = () =>{
 	let user = JSON.parse(sessionStorage.user || null);
+	if (user != null){
 		//means user is logged in
-	popuptext.innerHTML = `Logado como ${user.name}`;
-	actionBtn.innerHTML = 'Sair';
-	actionBtn.addEventListener('click', () =>{
-		sessionsStorage.clear();
-		location.reload();
+			popuptext.innerHTML = `Logado como ${user.name}`;
+			actionBtn.innerHTML = 'Sair';
+			actionBtn.addEventListener('click', () =>{
+			sessionStorage.clear();
+			location.reload();
 	})
 } else{
 	//user is logged out
-	popuptext.innerHTML = 'Fazer login'
-	actionBtn.innerHTML = 'Entrar'
-	actionBtn.addEventListener('click', () =>{
-		location.href = '/login';
-	})
+			popuptext.innerHTML = 'Fazer login'
+			actionBtn.innerHTML = 'Entrar'
+			actionBtn.addEventListener('click', () =>{
+			location.href = '/login';
+		})
+	}
 }
