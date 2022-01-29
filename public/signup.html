@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Daniel Melo"/>
+
+	  <link rel="stylesheet" href="css/form.css">
+	</head>
+	<body>
+			<img src="img/loader.gif" class="loader" alt="">
+<div class="alert-box">
+    <img src="img/error.png" class="alert-img" alt="">
+    <p class="alert-msg">Mensagem de erro</p>
+</div>
+<div class="container">
+  <img src="img/logo.png" class="logo" alt="">
+    <div>
+        <input type="text" autocomplete="off" id="name" placeholder="nome">
+        <input type="email" autocomplete="off" id="email" placeholder="email">
+        <input type="password" autocomplete="off" id="password" placeholder="senha">
+        <input type="text" autocomplete="off" id="number" placeholder="numero">
+        <input type="checkbox" checked class="checkbox" id="terms-and-cond">
+        <label for="terms-and-cond">Concordo com os <a href="">Termos e Condições</a></label>
+        <br>
+        <input type="checkbox" class="checkbox" id="notification">
+        <label for="notification">Receber email de eventos e ofertas futuras</a></label>
+        <button class="submit-btn">Criar Conta</button>
+    </div>
+    <a href="/login" class="link">Já tem uma conta? Entre aqui</a>
+</div>
+	</body>
+	<script src="js/form.js"></script>
+	<script src="js/token.js"></script>
+</html>

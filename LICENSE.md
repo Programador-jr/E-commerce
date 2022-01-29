@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2021 Daniel Melo do Nascimento
+Copyright (c) 2022 Daniel Melo do Nascimento
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
