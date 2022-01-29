@@ -9,7 +9,13 @@ const createNav = () => {
                     <input type="text" class="search-box" placeholder="Pesquisar Produto">
                     <button class="search-btn">Procurar</button>
                 </div>
-                <a href="#"><img src="img/user.png" alt=""></a>
+                <a>
+									<img src="img/user.png" id="user-img" alt="">
+									<div class="login-logout-popup hide">
+										<p class="account-info">Entre com o nome</p>
+										<button class="btn" id="user-btn">Sair</button>
+									</div>
+								</a>
                 <a href="#"><img src="img/cart.png" alt=""></a>
             </div>
         </div>
@@ -24,3 +30,32 @@ const createNav = () => {
 }
 
 createNav();
+
+
+//nav popup
+const userImageButton = document.querySelector('#user-img');
+const userPopup = document.querySelector('.login-logout-popup');
+const popuptext = document.querySelector('.account-info');
+const actionBtn = document.querySelector('#user-btn');
+
+userImageButton.addEventListener('click', () =>{
+	userPopup.classList.toggle('hide');
+})
+
+window.onload = () =>{
+	let user = JSON.parse(sessionStorage.user || null);
+		//means user is logged in
+	popuptext.innerHTML = `Logado como ${user.name}`;
+	actionBtn.innerHTML = 'Sair';
+	actionBtn.addEventListener('click', () =>{
+		sessionsStorage.clear();
+		location.reload();
+	})
+} else{
+	//user is logged out
+	popuptext.innerHTML = 'Fazer login'
+	actionBtn.innerHTML = 'Entrar'
+	actionBtn.addEventListener('click', () =>{
+		location.href = '/login';
+	})
+}
