@@ -111,6 +111,12 @@ app.post('/login', (req, res) =>{
 	})
 })
 
+// Seller route
+
+	app.get('/seller', (req, res) =>{
+			 res.sendFile(path.join(staticPath, "seller.html"));
+	})								
+
 // 404 route
 app.get('/404', (req, res) => {
     res.sendFile(path.join(staticPath, "404.html"));
